@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\laptrinhweb\\asp_web\\BaiTap04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|d:\\laptrinhweb\\asp_web\\baitap04\\baitap04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|solutionrelative:baitap04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|d:\\laptrinhweb\\asp_web\\baitap04\\baitap04\\views\\theloaicontroller1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|solutionrelative:baitap04\\views\\theloaicontroller1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|d:\\laptrinhweb\\asp_web\\baitap04\\baitap04\\controllers\\theloaicontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|solutionrelative:baitap04\\controllers\\theloaicontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|d:\\laptrinhweb\\asp_web\\baitap04\\baitap04\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|solutionrelative:baitap04\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|d:\\laptrinhweb\\asp_web\\baitap04\\baitap04\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3AC13832-7391-4A33-8730-EF4BDD3D6F5B}|BaiTap04\\BaiTap04.csproj|solutionrelative:baitap04\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 91,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Views\\TheLoaiController1\\Index.cshtml",
+              "RelativeDocumentMoniker": "BaiTap04\\Views\\TheLoaiController1\\Index.cshtml",
+              "ToolTip": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Views\\TheLoaiController1\\Index.cshtml",
+              "RelativeToolTip": "BaiTap04\\Views\\TheLoaiController1\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T07:04:08.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TheLoaiController1.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Controllers\\TheLoaiController1.cs",
+              "RelativeDocumentMoniker": "BaiTap04\\Controllers\\TheLoaiController1.cs",
+              "ToolTip": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Controllers\\TheLoaiController1.cs",
+              "RelativeToolTip": "BaiTap04\\Controllers\\TheLoaiController1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T06:56:29.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BaiTap04\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BaiTap04\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T06:51:13.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\.gitignore",
+              "RelativeDocumentMoniker": "BaiTap04\\.gitignore",
+              "ToolTip": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\.gitignore",
+              "RelativeToolTip": "BaiTap04\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-06T06:48:19.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Program.cs",
+              "RelativeDocumentMoniker": "BaiTap04\\Program.cs",
+              "ToolTip": "D:\\laptrinhweb\\asp_web\\BaiTap04\\BaiTap04\\Program.cs",
+              "RelativeToolTip": "BaiTap04\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T06:47:02.105Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 171,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
