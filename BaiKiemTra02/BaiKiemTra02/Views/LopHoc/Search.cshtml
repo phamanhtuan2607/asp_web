@@ -1,7 +1,44 @@
-﻿
-@{
-    ViewData["Title"] = "Search";
-}
+﻿@model List<LopHoc>
+
 
 <h1>Search</h1>
 
+<form method="get" action="/LopHoc/Search">
+    <div class="form-group">
+        <label for="searchString">Search String:</label>
+        <input type="text" class="form-control" id="searchString" name="searchString" placeholder="Enter search string">
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+@if (Model != null && Model.Count > 0)
+{
+    <h2>Search Results</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ten Lop Hoc</th>
+                <th>So Luong Sinh Vien</th>
+                <th>Nam Nhap Hoc</th>
+                <th>Nam Ra Truong</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var lophoc in Model)
+            {
+                <tr>
+                    <td>@lophoc.Id</td>
+                    <td>@lophoc.TenLopHoc</td>
+                    <td>@lophoc.SoLuongSinhVien</td>
+                    <td>@lophoc.NamNhapHoc</td>
+                    <td>@lophoc.NamRaTruong</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No search results found.</p>
+}

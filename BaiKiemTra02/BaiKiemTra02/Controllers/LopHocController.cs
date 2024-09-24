@@ -15,8 +15,8 @@ namespace BaiKiemTra02.Controllers
         {
             var lophoc = _db.LopHoc.ToList();
             ViewBag.LopHoc = lophoc;
-            return View();
-            return View();
+            return View(lophoc);
+         
         }
         [HttpGet]
         public IActionResult Create()
@@ -91,6 +91,10 @@ namespace BaiKiemTra02.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
+        public IActionResult Search()
+        {
+            return View();
+        }
         public IActionResult Search(string searchString)
         {
             if (!string.IsNullOrEmpty(searchString))
