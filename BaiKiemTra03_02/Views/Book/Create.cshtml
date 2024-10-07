@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+@model book
+<div class="container">
+    <h3>Thêm sách</h3>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="bookId">Mã sách</label>
+            <input asp-for="bookId" type="text" class="form-control" />
+            <span asp-validation-for="bookId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="title">Tiêu đề</label>
+            <input asp-for="title" type="text" class="form-control" />
+            <span asp-validation-for="title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="publiicationYear">Năm xuất bản</label>
+            <input asp-for="publiicationYear" type="date" class="form-control" />
+            <span asp-validation-for="publiicationYear" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="genre">Thể loại sách</label>
+            <input asp-for="genre" type="text" class="form-control" />
+            <span asp-validation-for="genre" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Tạo mới</button>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "details";
+}
+@model book
+<div>
+    Id <b>@Model.bookId</b> <br />
+    Name: <b>@Model.title</b><br />
+    Ngay<b>@String.Format("{0:dd/MM/yyyy}", Model.publiicationYear)</b>
+
+</div>
