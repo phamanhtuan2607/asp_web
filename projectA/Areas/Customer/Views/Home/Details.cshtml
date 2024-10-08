@@ -1,0 +1,104 @@
+﻿@model SanPhamViewModel
+
+<style>
+    .product-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .quantity-control {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+        .quantity-control button {
+            width: 40px;
+            height: 40px;
+        }
+
+    .quantity-input {
+        width: 60px;
+        text-align: center;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-6">
+            <img src="@Model.ImageUrl" alt="Product Image" class="product-image">
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+            <h1 class="product-title">@Model.Name</h1>
+            <p class="product-description">@Model.Description</p>
+            <h4 class="product-price text-danger">
+                <span id="total-price">@Model.price.ToString("N0")</span> đ
+            </h4>
+
+            <!-- Quantity Selector -->
+            <div class="quantity-control my-3">
+                <button class="btn btn-outline-secondary" onclick="decreaseQuantity()">-</button>
+                <input type="text" class="form-control quantity-input mx-2" id="quantity" value="1" readonly>
+                <button class="btn btn-outline-secondary" onclick="increaseQuantity()">+</button>
+            </div>
+
+            <!-- Add to Cart Button -->
+            <button class="btn btn-danger">Mua ngay</button>
+            <button class="btn btn-primary" onclick="addToCart()">Thêm vào giỏ hàng</button>
+
+            <!-- Success Message -->
+            <div id="cart-message" class="alert alert-success mt-3 d-none">
+                Product added to cart successfully!
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script>
+        var pricePerUnit = @Model.price; // Giá mỗi sản phẩm
+        var quantityInput = document.getElementById('quantity');
+        var totalPriceElement = document.getElementById('total-price');
+
+        // Hàm cập nhật giá tiền
+        function updateTotalPrice() {
+            var quantity = parseInt(quantityInput.value);
+            var totalPrice = pricePerUnit * quantity;
+            totalPriceElement.textContent = totalPrice.toLocaleString('vi-VN');
+        }
+
+        function increaseQuantity() {
+            var currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+            updateTotalPrice(); // Tự động cập nhật giá khi tăng số lượng
+        }
+
+        function decreaseQuantity() {
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+                updateTotalPrice(); // Tự động cập nhật giá khi giảm số lượng
+            }
+        }
+
+        function addToCart() {
+            var quantity = document.getElementById('quantity').value;
+            var messageDiv = document.getElementById('cart-message');
+
+            // Hiển thị thông báo thêm vào giỏ hàng
+            messageDiv.classList.remove('d-none');
+            messageDiv.textContent = 'Đã thêm ' + quantity + ' sản phẩm vào giỏ hàng!';
+
+            // Đặt lại số lượng về 1 sau khi thêm vào giỏ
+            document.getElementById('quantity').value = 1;
+            updateTotalPrice(); // Cập nhật lại giá tiền khi số lượng về 1
+
+            // Ẩn thông báo sau 3 giây
+            setTimeout(function () {
+                messageDiv.classList.add('d-none');
+            }, 3000);
+        }
+    </script>
+</div>

@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ASUS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/projectA.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaSE_205zy974pgs1mlLiMUzr0alptfknEw&s" alt="TIKI" width="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Hướng dẫn sử dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Chính sách mua hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+ 
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ASUS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+     <style>
+        .chat-facebook {
+            position: fixed; /* Định vị cố định */
+            bottom: 20px;    /* Cách phía dưới của trang 20px */
+            right: 20px;     /* Cách phía phải của trang 20px */
+            z-index: 1000;   /* Đảm bảo luôn hiển thị trên các phần tử khác */
+        }
+
+        .chat-facebook img {
+            width: 60px;     /* Tăng kích thước biểu tượng */
+            height: 60px;
+            cursor: pointer; /* Thêm con trỏ pointer khi hover */
+        }
+
+        /* Hiệu ứng khi di chuột vào biểu tượng */
+        .chat-facebook img:hover {
+            transform: scale(1.1);  /* Phóng to nhẹ khi hover */
+            transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt */
+        }
+    </style>
+    
+    <div class="chat-facebook">
+        <a href="https://www.facebook.com/"><img title="Chat Facebook" src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="facebook-icon" width="40" height="40"/></a
+    </div>
+     <!-- Facebook Chat Plugin -->
+    <div id="fb-root"></div>
+   <div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="chimsedinangaoe"
+     theme_color="#0084ff"
+     logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
+     logged_out_greeting="Xin chào! Đăng nhập để trò chuyện với chúng tôi!">
+</div>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      // Toggle Chat Plugin visibility
+      function toggleChat() {
+        var chatbox = document.querySelector(".fb-customerchat");
+        if (chatbox.style.display === "none" || chatbox.style.display === "") {
+          chatbox.style.display = "block";  // Hiện ô chat
+        } else {
+          chatbox.style.display = "none";   // Ẩn ô chat
+        }
+      }
+    </script>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

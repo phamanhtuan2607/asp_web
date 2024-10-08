@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Deleted";
+}
+@model book
+<div class="container">
+    <h3>Xóa </h3>
+    <form method="post" asp-action="DeletedConfirm">
+        <input type="hidden" asp-for="bookId" />
+        <div class="text-danger" asp-validation-summary="All"></div>
+
+        <div class="form-group">
+            <label asp-for="title">Tên Thể Loại</label>
+            <input asp-for="title" type="text" class="form-control" readonly />
+            <span asp-validation-for="title" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="publiicationYear">Ngày tạo</label>
+            <input asp-for="publiicationYear" type="date" class="form-control" readonly />
+            <span asp-validation-for="publiicationYear" class="text-danger" />
+        </div>
+        <a asp-controller="TheLoai" asp-action="Index" class="btn btn-primary">Quay về</a>
+        <button type="submit" class="btn btn-primary">Deleted</button>
+    </form>
+
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

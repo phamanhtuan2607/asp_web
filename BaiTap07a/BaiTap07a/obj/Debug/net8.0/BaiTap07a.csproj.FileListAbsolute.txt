@@ -564,3 +564,4 @@ D:\laptrinhweb\asp_web\BaiTap07a\BaiTap07a\bin\Debug\net8.0\runtimes\win\lib\net
 D:\laptrinhweb\asp_web\BaiTap07a\BaiTap07a\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\laptrinhweb\asp_web\BaiTap07a\BaiTap07a\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\laptrinhweb\asp_web\BaiTap07a\BaiTap07a\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\laptrinhweb\asp_web\BaiTap07a\BaiTap07a\bin\Debug\net8.0\CopilotDev.NET.Api.dll
