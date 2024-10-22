@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+
 
 using projectA.Data;
 
@@ -17,6 +19,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().
     AddDefaultTokenProviders().AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+
+
 
 var app = builder.Build();
 
